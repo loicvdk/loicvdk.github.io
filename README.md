@@ -1,33 +1,12 @@
-# Force-Directed Graph
+# Visualisation & Network Theory
 
-https://observablehq.com/@d3/force-directed-graph@149
+## Haugsbo E., Bettum R. and Vanderkelen L.
 
-View this notebook in your browser by running a web server in this folder. For
-example:
+### Description
 
-~~~sh
-python -m SimpleHTTPServer
-~~~
+This network represents the links between different employees of _Alt Installasjon_. This following code is inspired by [Bostock (2017)](https://observablehq.com/@d3/force-directed-graph) and modified by Haugsbo E., Bettum R. and Vanderkelen L. for the visualisation & network theory course by Christoph Lutz and Christian Fieseler (2021) at BI Norwegian Business School, Oslo, Norway.
 
-Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
-import this module directly into your application. To npm install:
+### Informations
 
-~~~sh
-npm install @observablehq/runtime@4
-npm install https://api.observablehq.com/@d3/force-directed-graph.tgz?v=3
-~~~
-
-Then, import your notebook and the runtime as:
-
-~~~js
-import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "@d3/force-directed-graph";
-~~~
-
-To log the value of the cell named “foo”:
-
-~~~js
-const runtime = new Runtime();
-const main = runtime.module(define);
-main.value("foo").then(value => console.log(value));
-~~~
+The different color scales where found on [coolors.co](https://coolors.co/palettes/trending).  
+In order to fully understand the code, we would advise you to read the [d3.force documentation](https://github.com/d3/d3-force).
