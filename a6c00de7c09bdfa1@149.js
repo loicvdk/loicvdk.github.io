@@ -37,7 +37,7 @@ This network represents the links between different employees of _Alt Installasj
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
-      .force("charge", d3.forceManyBody().strength(-900))
+      .force("charge", d3.forceManyBody().strength(-950))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
   const svg = d3.create("svg")
