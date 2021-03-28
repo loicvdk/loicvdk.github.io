@@ -29,8 +29,10 @@ This network represents the links between different employees of _Alt Installasj
   // const colors = [0, "#e0aaff", "#c77dff", "#9d4edd", "#7b2cbf", "#5a189a"]; 
   // const colors = [0, "#fff6cc", "#ffee99", "#ffe97f", "#ffe14c", "#ffd819"]; 
   // const colors = [0, "#ffea00", "#ffd000", "#ffb700", "#ffa200", "#ff8800"]; 
-  // const colors = [0, "#0091ad", "#1780a1", "#2e6f95", "#455e89", "#5c4d7d"];   
-  const colors = [0, "#d9ed92", "#99d98c", "#52b69a", "#168aad", "#1e6091"]; 
+  // const colors = [0, "#0091ad", "#1780a1", "#2e6f95", "#455e89", "#5c4d7d"];  
+  // FAVORITE PALETTE FOR NOW --> GREEN BLUE 
+  // const colors = [0, "#d9ed92", "#99d98c", "#52b69a", "#168aad", "#1e6091"]; 
+  const colors = [0, "#e83830", "#f67f6c", "#f1f1f1", "#8abfeb", "#3ca7e8"];
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
