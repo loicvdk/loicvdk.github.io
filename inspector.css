@@ -90,3 +90,7 @@
   background-color: #212529;
   color: #adb5bd;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
