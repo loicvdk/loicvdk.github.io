@@ -32,18 +32,18 @@ This network represents the links between different employees of _Alt Installasj
   // const colors = [0, "#0091ad", "#1780a1", "#2e6f95", "#455e89", "#5c4d7d"];  
   // FAVORITE PALETTE FOR NOW --> GREEN BLUE 
   // const colors = [0, "#d9ed92", "#99d98c", "#52b69a", "#168aad", "#1e6091"]; 
+  // DATA ROBOT COLOR PALETTE --> from blue to red
   const colors = [0, "#e83830", "#f67f6c", "#f1f1f1", "#8abfeb", "#3ca7e8"];
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
-      .force("charge", d3.forceManyBody().strength(-1100))
+      .force("charge", d3.forceManyBody().strength(-900))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
   const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
 
   const link = svg.append("g")
-      // .attr("stroke", "#999")
       .attr("stroke-opacity", 0.7)
     .selectAll("line")
     .data(links)
@@ -95,7 +95,7 @@ This network represents the links between different employees of _Alt Installasj
 FileAttachment("miserables.json").json()
 )});
   main.variable(observer("height")).define("height", function(){return(
-1200
+800
 )});
   main.variable(observer("color")).define("color", ["d3"], function(d3)
 {
