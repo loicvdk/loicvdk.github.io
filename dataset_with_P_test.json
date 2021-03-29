@@ -1,0 +1,717 @@
+{
+    "nodes": [
+        {
+            "id": "0",
+            "EmployeeId": "12150",
+            "Function": "Teknikker",
+            "AvgEfficRateNode": "57",
+            "E": "2.4",
+            "A": "3.4",
+            "C": "3.6",
+            "N": "2.8",
+            "O": "2.8"
+        },
+        {
+            "id": "7",
+            "EmployeeId": "12217",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "90",
+            "E": "3.2",
+            "A": "3.2",
+            "C": "3.6",
+            "N": "1.4",
+            "O": "3.4"
+        },
+        {
+            "id": "10",
+            "EmployeeId": "12227",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "83",
+            "E": "2.8",
+            "A": "3",
+            "C": "3",
+            "N": "2.4",
+            "O": "2.4"
+        },
+        {
+            "id": "11",
+            "EmployeeId": "12228",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "83",
+            "E": "2.8",
+            "A": "2.8",
+            "C": "3.2",
+            "N": "1.8",
+            "O": "2.8"
+        },
+        {
+            "id": "22",
+            "EmployeeId": "21636",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "88",
+            "E": "3.8",
+            "A": "3.8",
+            "C": "3.6",
+            "N": "0.8",
+            "O": "3"
+        },
+        {
+            "id": "23",
+            "EmployeeId": "21787",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "92",
+            "E": "3.6",
+            "A": "3.6",
+            "C": "3.6",
+            "N": "2.2000000000000002",
+            "O": "3.2"
+        },
+        {
+            "id": "25",
+            "EmployeeId": "21794",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "53",
+            "E": "4",
+            "A": "3.6",
+            "C": "2.6",
+            "N": "1.2",
+            "O": "3.8"
+        },
+        {
+            "id": "27",
+            "EmployeeId": "22592",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "112",
+            "E": "2.6",
+            "A": "3.2",
+            "C": "3",
+            "N": "1.8",
+            "O": "3.8"
+        },
+        {
+            "id": "29",
+            "EmployeeId": "23239",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "115",
+            "E": "4",
+            "A": "3.8",
+            "C": "3",
+            "N": "0.8",
+            "O": "3"
+        },
+        {
+            "id": "30",
+            "EmployeeId": "23279",
+            "Function": "Montør S",
+            "AvgEfficRateNode": "193",
+            "E": "3",
+            "A": "2.6",
+            "C": "2.8",
+            "N": "2.4",
+            "O": "2.4"
+        },
+        {
+            "id": "33",
+            "EmployeeId": "24338",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "138",
+            "E": "3",
+            "A": "3.4",
+            "C": "3",
+            "N": "1.8",
+            "O": "2.4"
+        },
+        {
+            "id": "34",
+            "EmployeeId": "24339",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "124",
+            "E": "3.2",
+            "A": "3.8",
+            "C": "3.2",
+            "N": "1.2",
+            "O": "3"
+        },
+        {
+            "id": "35",
+            "EmployeeId": "24340",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "94",
+            "E": "3.6",
+            "A": "3.8",
+            "C": "3.6",
+            "N": "1.2",
+            "O": "3"
+        },
+        {
+            "id": "39",
+            "EmployeeId": "25429",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "109",
+            "E": "2.4",
+            "A": "3.2",
+            "C": "3",
+            "N": "2.4",
+            "O": "2.8"
+        },
+        {
+            "id": "40",
+            "EmployeeId": "25430",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "100",
+            "E": "3.4",
+            "A": "3.6",
+            "C": "3.6",
+            "N": "1.6",
+            "O": "3.4"
+        },
+        {
+            "id": "41",
+            "EmployeeId": "25994",
+            "Function": "Lærling",
+            "AvgEfficRateNode": "58",
+            "E": "2.4",
+            "A": "2.2000000000000002",
+            "C": "3.2",
+            "N": "2",
+            "O": "3"
+        },
+        {
+            "id": "42",
+            "EmployeeId": "28365",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "102",
+            "E": "2.2000000000000002",
+            "A": "3.2",
+            "C": "2.8",
+            "N": "2.4",
+            "O": "2.2000000000000002"
+        },
+        {
+            "id": "45",
+            "EmployeeId": "28410",
+            "Function": "Lærling",
+            "AvgEfficRateNode": "95",
+            "E": "4",
+            "A": "3.6",
+            "C": "2.8",
+            "N": "1.2",
+            "O": "3.2"
+        },
+        {
+            "id": "53",
+            "EmployeeId": "30911",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "127",
+            "E": "2.2000000000000002",
+            "A": "3.4",
+            "C": "3.6",
+            "N": "1.8",
+            "O": "2.6"
+        },
+        {
+            "id": "54",
+            "EmployeeId": "31048",
+            "Function": "Montør L",
+            "AvgEfficRateNode": "165",
+            "E": "3.2",
+            "A": "3.8",
+            "C": "3.6",
+            "N": "2",
+            "O": "3.2"
+        },
+        {
+            "id": "55",
+            "EmployeeId": "31143",
+            "Function": "Lærling",
+            "AvgEfficRateNode": "53",
+            "E": "3",
+            "A": "3.8",
+            "C": "3",
+            "N": "1.4",
+            "O": "4"
+        }
+    ],
+    "links": [
+        {
+            "source_full": "12150",
+            "source": "0",
+            "target_full": "24338",
+            "target": "10",
+            "Efficiency Rate": "56.733796820638",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "28410",
+            "target": "17",
+            "Efficiency Rate": "73.19250498083",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "75.696296506724",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "79.654412784153",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "81.664073694975",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "85.586610834333",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "24338",
+            "target": "10",
+            "Efficiency Rate": "90.297313161149",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "22592",
+            "target": "7",
+            "Efficiency Rate": "99.906307536532",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "23239",
+            "target": "8",
+            "Efficiency Rate": "100.92512595876",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "12217",
+            "source": "1",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "121.94935104633",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "12227",
+            "source": "2",
+            "target_full": "12228",
+            "target": "3",
+            "Efficiency Rate": "83.07994857088",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "25994",
+            "target": "15",
+            "Efficiency Rate": "58.345796802671",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "24340",
+            "target": "12",
+            "Efficiency Rate": "70.593114347872",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "72.060589028215",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "72.429061059426",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "73.713163756212",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "75.58558800263",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "23239",
+            "target": "8",
+            "Efficiency Rate": "76.1161952462",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "79.303372591582",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "80.547324142838",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "82.00527865599",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "22592",
+            "target": "7",
+            "Efficiency Rate": "85.858865813168",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "28410",
+            "target": "17",
+            "Efficiency Rate": "86.3380091103",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "21787",
+            "target": "5",
+            "Efficiency Rate": "92.13271101827",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "21787",
+            "target": "5",
+            "Efficiency Rate": "93.912897520403",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "94.281653843151",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "94.511437077146",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "94.511437077146",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "21787",
+            "target": "5",
+            "Efficiency Rate": "98.622176887886",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "110.25635622944",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "12228",
+            "source": "3",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "113.13707044051",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "21636",
+            "source": "4",
+            "target_full": "23239",
+            "target": "8",
+            "Efficiency Rate": "88.306076790742",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "21787",
+            "source": "5",
+            "target_full": "24339",
+            "target": "11",
+            "Efficiency Rate": "77.338819935336",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "21787",
+            "source": "5",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "84.157928881248",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "21787",
+            "source": "5",
+            "target_full": "24338",
+            "target": "10",
+            "Efficiency Rate": "98.597480539829",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "21787",
+            "source": "5",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "99.410116162548",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "21794",
+            "source": "6",
+            "target_full": "31143",
+            "target": "20",
+            "Efficiency Rate": "52.59489106568",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "22592",
+            "source": "7",
+            "target_full": "23239",
+            "target": "8",
+            "Efficiency Rate": "98.999953154524",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "22592",
+            "source": "7",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "117.21622719007",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "22592",
+            "source": "7",
+            "target_full": "24338",
+            "target": "10",
+            "Efficiency Rate": "119.16564650317",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "22592",
+            "source": "7",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "119.77782240068",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "22592",
+            "source": "7",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "140.89580958855",
+            "Eff Grp": "4"
+        },
+        {
+            "source_full": "23239",
+            "source": "8",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "87.905174678517",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "23239",
+            "source": "8",
+            "target_full": "28410",
+            "target": "17",
+            "Efficiency Rate": "112.56806233086",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "23239",
+            "source": "8",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "144.39551658582",
+            "Eff Grp": "4"
+        },
+        {
+            "source_full": "23279",
+            "source": "9",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "192.59974505277",
+            "Eff Grp": "5"
+        },
+        {
+            "source_full": "24338",
+            "source": "10",
+            "target_full": "28410",
+            "target": "17",
+            "Efficiency Rate": "108.38099368342",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "24338",
+            "source": "10",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "167.77188414091",
+            "Eff Grp": "5"
+        },
+        {
+            "source_full": "24339",
+            "source": "11",
+            "target_full": "25430",
+            "target": "14",
+            "Efficiency Rate": "82.353910607602",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "24339",
+            "source": "11",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "82.565980202812",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "24339",
+            "source": "11",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "94.511437077146",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "24339",
+            "source": "11",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "164.4323504583",
+            "Eff Grp": "5"
+        },
+        {
+            "source_full": "24339",
+            "source": "11",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "248.08998159439",
+            "Eff Grp": "5"
+        },
+        {
+            "source_full": "24340",
+            "source": "12",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "75.71800485646",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "24340",
+            "source": "12",
+            "target_full": "28410",
+            "target": "17",
+            "Efficiency Rate": "92.291793587837",
+            "Eff Grp": "2"
+        },
+        {
+            "source_full": "24340",
+            "source": "12",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "114.02595010556",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "25429",
+            "source": "13",
+            "target_full": "31048",
+            "target": "19",
+            "Efficiency Rate": "109.16105113015",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "25430",
+            "source": "14",
+            "target_full": "30911",
+            "target": "18",
+            "Efficiency Rate": "83.931318138438",
+            "Eff Grp": "1"
+        },
+        {
+            "source_full": "25430",
+            "source": "14",
+            "target_full": "28365",
+            "target": "16",
+            "Efficiency Rate": "108.26393022517",
+            "Eff Grp": "3"
+        },
+        {
+            "source_full": "28410",
+            "source": "17",
+            "target_full": "31048",
+            "target": "19",
+            "Efficiency Rate": "221.28243758328",
+            "Eff Grp": "5"
+        }
+    ]
+}

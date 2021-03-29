@@ -13,9 +13,10 @@ This network represents the links between different employees of _Alt Installasj
   const links = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
 
-  // console.log('NODES!');
-  // console.log('LINKS!');
-  // console.log(links);
+  let range_node_eff = [];
+  nodes.map(d=> range_node_eff.push(+d.AvgEfficRateNode));
+
+  console.log(range_node_eff);
   function getCount(perso) {
     var count = 0;
     for (var i = 0; i < links.length; i++) {
@@ -26,25 +27,43 @@ This network represents the links between different employees of _Alt Installasj
     return count;
 }
 
+const colors = [
+  0,
+  d3.interpolateViridis(0.9), 
+  d3.interpolateViridis(0.7), 
+  d3.interpolateViridis(0.5), 
+  d3.interpolateViridis(0.3), 
+  d3.interpolateViridis(0.2)
+];
+
   // const colors = [0, "#e0aaff", "#c77dff", "#9d4edd", "#7b2cbf", "#5a189a"]; 
   // const colors = [0, "#fff6cc", "#ffee99", "#ffe97f", "#ffe14c", "#ffd819"]; 
-  // const colors = [0, "#ffea00", "#ffd000", "#ffb700", "#ffa200", "#ff8800"]; 
+  // const colors = [0, "#ffde1a", "#ffce00", "#ffa700", "#ff8d00", "#ff7400"]; 
   // const colors = [0, "#0091ad", "#1780a1", "#2e6f95", "#455e89", "#5c4d7d"];  
   // FAVORITE PALETTE FOR NOW --> GREEN BLUE 
   // const colors = [0, "#d9ed92", "#99d98c", "#52b69a", "#168aad", "#1e6091"]; 
   // DATA ROBOT COLOR PALETTE --> from blue to red
-  const colors = [0, "#e83830", "#f67f6c", "#f1f1f1", "#8abfeb", "#3ca7e8"];
+  // const colors = [0, "#3ca7e8", "#8abfeb", "#f1f1f1", "#f67f6c", "#e83830"];
+
+
+  // var range_color = d3.scaleLinear()
+  // .domain([Math.min(...range_node_eff), Math.max(...range_node_eff)])
+  // .range(["#3ca7e8", "#e83830"]);
+
+  // var interpolate_color = d3.interpolateRgb("#3ca7e8", "#e83830")
+  var interpolate_color = d3.interpolateRgb(colors[1], colors[5])
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
-      .force("charge", d3.forceManyBody().strength(-950))
+      .force("charge", d3.forceManyBody().strength(-2500))
+      // .force("charge", d3.forceManyBody().distanceMax(200))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
   const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
 
   const link = svg.append("g")
-      .attr("stroke-opacity", 0.7)
+      .attr("stroke-opacity", 1)
     .selectAll("line")
     .data(links)
     .join("line")
@@ -59,18 +78,20 @@ This network represents the links between different employees of _Alt Installasj
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-      .attr("r", d => Math.sqrt(getCount(nodes[d.id])) + 10)
-      .attr("fill", d => {
-        if(d.function == "Montør L")
-          {return "#b7094c"} 
-        else if(d.function == "Laerling")
-          {return "#5c4d7d"}
-        else 
-          {return "#0091ad"};})
+      .attr("r", d => Math.sqrt(getCount(nodes[d.id])) * 4 + 5)
+      .attr("fill", d => d3.interpolateViridis(1 - ((d.AvgEfficRateNode - Math.min(...range_node_eff)) * (1 / (Math.max(...range_node_eff) - Math.min(...range_node_eff))))))
+      // {
+      //   if(d.function == "Montør L")
+      //     {return "#b7094c"} 
+      //   else if(d.function == "Laerling")
+      //     {return "#5c4d7d"}
+      //   else 
+      //     {return "#0091ad"};})
       .call(drag(simulation));
 
   node.append("title")
       .text(
+        // d => d.AvgEfficRateNode
         d => d.id
       );
 
@@ -95,7 +116,7 @@ This network represents the links between different employees of _Alt Installasj
 FileAttachment("miserables.json").json()
 )});
   main.variable(observer("height")).define("height", function(){return(
-800
+1200
 )});
   main.variable(observer("color")).define("color", ["d3"], function(d3)
 {
