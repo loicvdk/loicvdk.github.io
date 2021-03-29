@@ -36,6 +36,7 @@ const colors = [
   d3.interpolateViridis(0.2)
 ];
 
+
   // const colors = [0, "#e0aaff", "#c77dff", "#9d4edd", "#7b2cbf", "#5a189a"]; 
   // const colors = [0, "#fff6cc", "#ffee99", "#ffe97f", "#ffe14c", "#ffd819"]; 
   // const colors = [0, "#ffde1a", "#ffce00", "#ffa700", "#ff8d00", "#ff7400"]; 
@@ -51,7 +52,6 @@ const colors = [
   // .range(["#3ca7e8", "#e83830"]);
 
   // var interpolate_color = d3.interpolateRgb("#3ca7e8", "#e83830")
-  var interpolate_color = d3.interpolateRgb(colors[1], colors[5])
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
@@ -68,9 +68,7 @@ const colors = [
     .data(links)
     .join("line")
       .attr("stroke", d => colors[d.eff_grp])
-      .attr("stroke-width", 4.5
-      // d => Math.sqrt(getCount(d.source))
-      );
+      .attr("stroke-width", 4.5);
 
   const node = svg.append("g")
       .attr("stroke", "#fff")
