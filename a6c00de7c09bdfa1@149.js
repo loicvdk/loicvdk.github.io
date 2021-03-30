@@ -16,14 +16,15 @@ This network represents the links between different employees of _Alt Installasj
   let range_node_eff = [];
   nodes.map(d=> range_node_eff.push(+d.AvgEfficRateNode));
 
-  console.log(range_node_eff);
   function getCount(perso) {
     var count = 0;
+    if(perso == undefined) {} else {
+      console.log(perso);
     for (var i = 0; i < links.length; i++) {
-        if (links[i].source == perso || links[i].target == perso) {
+        if (links[i].source.index == perso.index || links[i].target.index == perso.index) {
             count++;
         }
-    }
+    }}
     return count;
 }
 
@@ -56,7 +57,7 @@ const colors = [
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
       .force("charge", d3.forceManyBody().strength(-2500))
-      // .force("charge", d3.forceManyBody().distanceMax(200))
+      // .force("charge", d3.forceManyBody().distanceMax(2000))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
   const svg = d3.create("svg")
@@ -76,8 +77,12 @@ const colors = [
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-      .attr("r", d => Math.sqrt(getCount(nodes[d.id])) * 4 + 5)
-      .attr("fill", d => d3.interpolateViridis(1 - ((d.AvgEfficRateNode - Math.min(...range_node_eff)) * (1 / (Math.max(...range_node_eff) - Math.min(...range_node_eff))))))
+      .attr("r", d => Math.sqrt(getCount(nodes[d.index])) * 4 + 5)
+      .attr("fill", d => d3.interpolateViridis( Math.max(
+                              1 - ((d.AvgEfficRateNode - Math.min(...range_node_eff)) * 
+                              (1 / (Math.max(...range_node_eff) - Math.min(...range_node_eff)))),
+                              0.2
+      )))
       // {
       //   if(d.function == "Montør L")
       //     {return "#b7094c"} 
