@@ -13,6 +13,7 @@ This network represents the links between different employees of _Alt Installasj
   const links = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
 
+  console.log(links.length)
   let range_node_eff = [];
   nodes.map(d=> range_node_eff.push(+d.AvgEfficRateNode));
 
@@ -36,23 +37,6 @@ const colors = [
   d3.interpolateViridis(0.3), 
   d3.interpolateViridis(0.2)
 ];
-
-
-  // const colors = [0, "#e0aaff", "#c77dff", "#9d4edd", "#7b2cbf", "#5a189a"]; 
-  // const colors = [0, "#fff6cc", "#ffee99", "#ffe97f", "#ffe14c", "#ffd819"]; 
-  // const colors = [0, "#ffde1a", "#ffce00", "#ffa700", "#ff8d00", "#ff7400"]; 
-  // const colors = [0, "#0091ad", "#1780a1", "#2e6f95", "#455e89", "#5c4d7d"];  
-  // FAVORITE PALETTE FOR NOW --> GREEN BLUE 
-  // const colors = [0, "#d9ed92", "#99d98c", "#52b69a", "#168aad", "#1e6091"]; 
-  // DATA ROBOT COLOR PALETTE --> from blue to red
-  // const colors = [0, "#3ca7e8", "#8abfeb", "#f1f1f1", "#f67f6c", "#e83830"];
-
-
-  // var range_color = d3.scaleLinear()
-  // .domain([Math.min(...range_node_eff), Math.max(...range_node_eff)])
-  // .range(["#3ca7e8", "#e83830"]);
-
-  // var interpolate_color = d3.interpolateRgb("#3ca7e8", "#e83830")
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
@@ -83,18 +67,10 @@ const colors = [
                               (1 / (Math.max(...range_node_eff) - Math.min(...range_node_eff)))),
                               0.2
       )))
-      // {
-      //   if(d.function == "Montør L")
-      //     {return "#b7094c"} 
-      //   else if(d.function == "Laerling")
-      //     {return "#5c4d7d"}
-      //   else 
-      //     {return "#0091ad"};})
       .call(drag(simulation));
 
   node.append("title")
       .text(
-        // d => d.AvgEfficRateNode
         d => d.id
       );
 
